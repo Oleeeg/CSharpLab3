@@ -1,0 +1,53 @@
+﻿<Window x:Class="СSharpLab3.PersonResultWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:СSharpLab3"
+        mc:Ignorable="d"
+        Title="Questionnaire" Height="500" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://i.ibb.co/b65XB71/2.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" FontSize="25" FontStyle="Italic" Foreground="WhiteSmoke" FontFamily="Garamond"
+                           HorizontalAlignment="Center" >
+            ---- Information about you ----
+        </Label>
+        <TextBlock Grid.Row ="1" Foreground="WhiteSmoke"
+                       TextWrapping="Wrap" Background="#15ffffff" FontStyle="Oblique" FontFamily="Garamond"
+                       TextAlignment="Center" FontSize="18" Margin="10" Text="{Binding Name, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Grid.Row ="2" Foreground="WhiteSmoke"
+                       TextWrapping="Wrap" Background="#15ffffff" FontStyle="Oblique" FontFamily="Garamond"
+                       TextAlignment="Center" FontSize="18" Margin="10" Text="{Binding LastName, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Grid.Row ="3" Foreground="WhiteSmoke"
+                       TextWrapping="Wrap" Background="#15ffffff" FontStyle="Oblique" FontFamily="Garamond"
+                       TextAlignment="Center" FontSize="18" Margin="10" Text="{Binding Email, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Grid.Row ="4" Foreground="WhiteSmoke"
+                       TextWrapping="Wrap" Background="#15ffffff" FontStyle="Oblique" FontFamily="Garamond"
+                       TextAlignment="Center" FontSize="18" Margin="10" Text="{Binding DateOfBirth, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Grid.Row ="5" Foreground="WhiteSmoke"
+                       TextWrapping="Wrap" Background="#15ffffff" FontStyle="Oblique" FontFamily="Garamond"
+                       TextAlignment="Center" FontSize="18" Margin="10" Text="{Binding SunSign, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Grid.Row ="6" Foreground="WhiteSmoke"
+                       TextWrapping="Wrap" Background="#15ffffff" FontStyle="Oblique" FontFamily="Garamond"
+                       TextAlignment="Center" FontSize="18" Margin="10" Text="{Binding ChineseSign, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Grid.Row ="7" Foreground="WhiteSmoke"
+                       TextWrapping="Wrap" Background="#15ffffff" FontStyle="Oblique" FontFamily="Garamond"
+                       TextAlignment="Center" FontSize="18" Margin="10" Text="{Binding IsBirthday, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Grid.Row ="8" Foreground="WhiteSmoke"
+                       TextWrapping="Wrap" Background="#15ffffff" FontStyle="Oblique" FontFamily="Garamond" 
+                       TextAlignment="Center" FontSize="18" Margin="10" Text="{Binding IsAdult, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+    </Grid>
+</Window>
